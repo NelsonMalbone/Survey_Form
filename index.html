@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC_Survey_Form</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="title">General Site Survey Form</h1>
+        <p id="description">NMC would like to know how and get to know you.</p>
+        <br>
+        <!-- Survey General Info -->
+        <form action="Survey_Form" id="survey-form">
+           <fieldset class="general">
+               <legend>General information</legend>
+                    <div class="inputs">
+                            <label for="fname" id="name-label" class="left-tab">First Name</label>
+                            <input type="text" placeholder="First Name" id="name" class="input_field" required >
+                            
+                            <label for="lname" id="name-label" class="left-tab">Last Name</label>
+                            <input type="text" placeholder="Last Name" id="name" class="input_field" required>
+                            
+                            <label for="email" class="left-tab" id="email-label">Email Address</label>
+                            <input type="email" placeholder="Email Address" id="email" class="input_field" required>
+                            
+                            <label for="date" id="date-label" class="left-tab">Date</label>
+                            <input type="date" id="date" name="date" class="input_field" required>
+
+                            <label for="age" id="number-label" 
+                            class="left-tab">Age</label>
+                            <input type="number" id="number" name="number"
+                            class="input_field" required min="10" max="99" placeholder="Age">
+                        </div>
+           </fieldset>
+
+           <!-- Survey Questions -->
+           <form action="survey" id="survey-form-2">
+               <fieldset class="questions">
+                   <legend>Survey Questions</legend>
+                        <div class="left_tab">
+                            <p>What is your gender</p>
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label><br>
+
+                            <input type="radio" id="male" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+
+                            <input type="radio" id="male" name="gender" value="Other">
+                            <label for="other">Other</label>
+                       
+                        </div>
+
+                        <div class="right_tab">
+                            <p>How many years <br> have you been coding/programming?</p>
+                            <label for="checkbox-1">0-6 Months</label>
+                            <input type="checkbox" id="cb-1" name="cb-1" value="0-6"><br>
+
+                            <label for="checkbox-1">6-12 Months</label>
+                            <input type="checkbox" id="cb-1" name="cb-1" value="6-12"><br>
+
+                            <label for="checkbox-1">1-5 Years</label>
+                            <input type="checkbox" id="cb-1" name="cb-1" value="1-5 Years"><br>
+
+                            <label for="checkbox-1">5-10 Years</label>
+                            <input type="checkbox" id="cb-1" name="cb-1" value="5-10"><br>
+
+                            <label for="checkbox-1">10+ Years</label>
+                            <input type="checkbox" id="cb-1" name="cb-1" value="10+">
+
+                        </div>
+
+                        <div class="left_tab">
+                            <p>What would you consider <br> yourself as a Devolper?</p>
+                            <select name="dropdown" id="dropdown">
+                                <option disabled selected value>Select Your Role</option>
+                                <option value="student">Student</option>
+                                <option value="job">Full Time Job</option>
+                                <option value="job2">Part Time Job</option>
+                                <option value="learner">Self Taught</option>
+                                <option value="leaner2">College Student</option>
+                                <option value="Hobby">Hobby</option>
+                                <option value="perfer">Ctrl-C Ctrl-V</option>
+                            </select>
+
+                        </div>
+
+                        <div class="right_tab">
+                            <p>What could you like to improve on in the next year? <br> (check all that apply)</p>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Front-End Project</label><br>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Back-End Project</label><br>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Data Visualization</label><br>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Challenges</label><br>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Open Source Community</label><br>
+                            <input type="checkbox" value="1" name="prefer">
+                            <label>Additonal Courses</label>
+                        </div>
+               </fieldset>
+               
+               <form action="survey-2" id="survey-form-3">
+                    <fieldset class="addition">
+                        <legend>Additonal</legend>
+                        <p>Any comments or suggestion please put in the box below</p>
+                        <textarea name="comment" id="comments" cols="50" rows="10" class="input-area" placeholder="Type Here"></textarea>
+                    </fieldset>
+
+                    <button type="submit" id="submit">Submit</button>
+
+               </form>
+
+           </form>
+
+        </form>
+    </div>
+
+    <script 
+        src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+    </script>
+</body>
+</html>

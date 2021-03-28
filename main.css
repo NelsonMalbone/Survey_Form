@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #A7A7A7;
+}
+
+.container {
+    position: absolute;
+    margin: 15px;
+    top:50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 100%;
+    background: #D3D3D3;
+    border-radius: 3px solid ;
+    font-size: 15px;
+    text-align: center;
+    overflow-y: scroll;
+ 
+}
+
+fieldset {
+    margin: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 700px;
+    border: 1px solid rgb(0, 157, 199); 
+}
+
+legend {
+    margin: 10px;
+}
+
+.left-tab {
+    display: inline-block;
+    text-align: left;
+    width: 35%;
+    vertical-align: middle;
+    margin: 10px;
+}
+
+.input_field {
+    display: inline-block;
+    text-align: middle;
+    width: 35%;
+    padding: 5px;
+    vertical-align: top;
+}
+
+.left_tab {
+    float: left;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.right_tab {
+    float: right;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.addition p {
+    padding: 2px;
+}
+
+button {
+    display: inline-block;
+    width: 50%;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 560px;
+    }
+
+    .questions {
+        display: inline-flex;  
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 730px;
+    }
+
+    .questions {
+        display: inline-flex;  
+    }
+    
+  }
